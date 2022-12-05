@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  background-image: url(./pink-smoke-effect-white-wallpaper.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  height: 100vh;
+  place-items: center;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+
+  position: relative;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+h1 {
+  font-weight: 25px;
+}
+
+h3 {
+  color: rgb(196, 196, 196);
+  padding-top: 5px;
+}
+
+.survey-form {
+  position: relative;
+  font-size: 18px;
+  margin: 15px;
+}
+
+.form-container {
+}
+
+form {
+}
+
+.input-box {
+  color: rgb(255, 255, 255);
+  margin: 35px 5px 40px 5px;
+
+  height: 30px;
+}
+.input-box input {
+  /* position: absolute; */
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0 0px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.input-box input::placeholder {
+  color: rgb(236, 236, 236);
+}
+label {
+}
+
+.input-box2 {
+  margin: 15px 0;
+  color: white;
+}
+
+.input-box2 h4 {
+  margin-left: 5px;
+}
+
+.input-box2 input {
+  height: 30px;
+}

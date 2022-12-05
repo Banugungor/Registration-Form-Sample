@@ -5,6 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">Registration Form</h1>
+        <!-- <h3 class="description">Thank you for signin up.</h3> -->
+      </header>
+      <div class="form-container">
+        <div class="survey-form">
+          <form action="result.html" method="post">
+            <div class="input-box">
+              <label for="name">Name</label>
+              <br />
+              <input type="text" id="name" name="name" placeholder="" />
+            </div>
+
+            <div class="input-box">
+              <label for="surname">Surname</label>
+              <br />
+              <input type="text" id="surname" name="surname" placeholder="" />
+            </div>
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <br />
+              <input type="email" id="email" name="email" placeholder="" />
+              <!-- <i class="uil uil-envelope"></i> -->
+            </div>
+            <div class="input-box">
+              <label for="phone">Phone</label>
+
+              <input type="number" id="phone" name="phone" placeholder="" />
+            </div>
+
+            <div class="input-box2">
+              <h4>What are your hobbies?</h4>
+              <input
+                type="checkbox"
+                name="first-check"
+                id="books"
+                value="books"
+              />
+              <label for="books">Books</label>
+
+              <input
+                type="checkbox"
+                name="second-check"
+                id="movies"
+                value="movies"
+              />
+              <label for="movies">Movies</label>
+              <input
+                type="checkbox"
+                name="third-check"
+                id="sport"
+                value="sport"
+              />
+              <label for="sport">Sports</label>
+
+              <input
+                type="checkbox"
+                name="fourth-check"
+                id="dance"
+                value="dance"
+              />
+              <label for="dance">Dance</label>
+            </div>
+            <div class="input-box2">
+              <h4>Choose your gender</h4>
+              <label for="gender"></label>
+              <input type="radio" name="gender" id="first-radio" value="Male" />
+              <label for="first-radio">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="second-radio"
+                value="Female"
+              />
+              <label for="second-radio">Female</label>
+            </div>
+
+            <div class="input-box2">
+              <label for="city">City</label>
+              <select name="city" id="dropdown">
+                <option value="istanbul">İstanbul</option>
+                <option value="Ankara">Ankara</option>
+                <option value="İzmir">İzmir</option>
+                <option value="Antalya">Antalya</option>
+                <option value="Mersin">Mersin</option>
+                <option value="Elazığ">Elazığ</option>
+                <option value="Diyarbakır">Diyarbakır</option>
+                <option value="Malatya">Malatya</option>
+                <option value="Sinop">Sinop</option>
+                <option value="Artvin" selected>Artvin</option>
+                <!-- selected ile istenilen seçenek üste konur -->
+              </select>
+            </div>
+            <div class="input-box2">
+              <label for="file">Dosya</label>
+              <input type="file" id="file" multiple />
+            </div>
+            <div id="form-submit">
+              <input type="submit" value="send" id="form-button" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
